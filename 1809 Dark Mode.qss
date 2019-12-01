@@ -1,0 +1,430 @@
+/* v1.3 1809 Dark Mode by 6788       */
+/* https://6788-00.tumblr.com/       */
+
+/* Color Palette                     */
+/* Background - Main       | #191919 */
+/* Background - Content    | #202020 */
+/* Background - Secondary  | #2B2B2B */
+/* Background - Checkboxes | #000    */
+/* Background - Scrollbars | #171717 */
+/* Background - Progress   | #06B025 */
+/* Border - Main           | #2B2B2B */
+/* Border - Secondary      | #3E3E3E */
+/* Border - Checkboxes     | #898989 */
+/* Border - Menus          | #A0A0A0 */
+/* Border - Boxes          | #535353 */
+/* Border - Headers        | #636363 */
+/* Hover - Main            | #4D4D4D */
+/* Hover - Checkboxes      | #797979 */
+/* Hover - Scrollbars      | #7A7A7A */
+/* Hover - Menus           | #414141 */
+/* Hover - Headers         | #434343 */
+/* Selected                | #777    */
+
+* {
+	background: #202020;
+	color: #DEDEDE;
+	font-size: 12px;
+	border: 0;
+}
+
+*:disabled {
+	color: #636363;
+}
+
+QMainWindow, QDialog, QMenuBar,
+#centralWidget, #layoutWidget, #startGroup, #layoutWidget_2, #splitter, #topLevelSplitter,
+#layoutWidget QLabel, 
+#EditExecutablesDialog #widget_2, #EditExecutablesDialog #widget_4, 
+#EditExecutablesDialog QLabel, #EditExecutablesDialog QCheckBox, 
+#EditExecutablesDialog QPushButton, #ModInfoDialog QPushButton,
+#ProfilesDialog QCheckBox, #ProfilesDialog QPushButton {
+	background: #191919;
+}
+
+QAbstractScrollArea {
+	background: #202020;
+	alternate-background-color: #202020;
+	border: 1px solid #2B2B2B;
+}
+
+QAbstractScrollArea::item {
+	min-height: 22px;
+}
+
+QAbstractItemView::item:hover {
+	background: #4D4D4D;
+	color: #FFF;
+}
+
+QAbstractItemView::item:selected {
+	background: #777;
+	color: #FFF;
+}
+
+QSplitter::handle {
+	background: transparent;
+}
+
+QToolBar {
+	background: #191919;
+	border-bottom: 1px solid #2B2B2B;
+	margin: 8px;
+}
+
+QToolBar::separator {
+	width: 0;
+	border: 1px solid #2B2B2B;
+}
+
+QToolButton {
+	background: #191919;
+	padding: 4px;
+	margin: 0 4px;
+}
+
+QHeaderView {
+	margin: -2px;
+	text-align: center;
+}
+
+QHeaderView::down-arrow {
+	image: url(./1809 Dark Mode/Arrows/Down.svg);
+	subcontrol-position: top center;
+}
+
+QHeaderView::up-arrow {
+	image: url(./1809 Dark Mode/Arrows/Up.svg);
+}
+
+QHeaderView::section {
+	height: 22px;
+	background: #202020;
+	color: #FFF;
+	padding: 0 4px;
+	border: 0;
+	border-right: 1px solid #636363;
+}
+
+QHeaderView::section:last {
+	margin-right: -2px;
+}
+
+QHeaderView::section:hover {
+	background: #434343;
+}
+
+QTabWidget::pane {
+	background: #202020;
+	border: 1px solid #2B2B2B;
+}
+
+QTabWidget QHeaderView::section {
+	background: #2B2B2B;
+}
+
+QTabWidget QAbstractItemView {
+	background: #2B2B2B;
+	alternate-background-color: #2B2B2B;
+	border: 1px solid #3E3E3E;
+}
+
+QTabBar::tab {
+	height: 24px;
+	background: #191919;
+	color: #FFF;
+	padding: 0 10px;
+	border: 1px solid transparent;
+	margin-bottom: -1px;
+}
+
+QTabBar::tab:disabled {
+	color: #636363;
+}
+
+QTabBar::tab:hover {
+	background: #4D4D4D;
+}
+
+QTabBar::tab:selected {
+	background: #0078D7;
+	color: #FFF;
+	padding: 0 10px;
+}
+QComboBox, QLineEdit {
+	min-height: 20px;
+	background: #191919;
+	color: #FFF;
+	padding-left: 5px;
+	border: 1px solid #535353;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+QComboBox::drop-down {
+	width: 20px;
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	border: 0;
+}
+
+QLineEdit:disabled {
+	color: #636363;
+}
+
+QComboBox::down-arrow,
+QToolButton:menu-indicator,
+QPushButton::menu-indicator,
+QTreeView::branch:open:has-children:has-siblings,
+QTreeView::branch:open:has-children:!has-siblings {
+	image: url(./1809 Dark Mode/Arrows/Down.svg);
+}
+
+QTreeView::branch:closed:has-children:has-siblings,
+QTreeView::branch:closed:has-children:!has-siblings {
+	image: url(./1809 Dark Mode/Arrows/Right.svg);
+}
+
+QPushButton {
+	color: #FFF;
+	min-height: 22px;
+	padding: 0 10px;
+}
+
+QToolButton:hover,
+QPushButton:hover, 
+#ModInfoDialog QPushButton:hover,
+#EditExecutablesDialog QPushButton:hover,
+#ProfilesDialog QPushButton:hover {
+	background: #4D4D4D;
+}
+
+QScrollBar, 
+QScrollBar::add-page, QScrollBar::sub-page,
+QScrollBar::add-line, QScrollBar::sub-line {
+	background: #171717;
+}
+
+QScrollBar::add-line:hover, QScrollBar::sub-line:hover {
+	background: #373737;
+}
+
+QScrollBar::handle {
+	background: #4D4D4D;
+	margin: 1px;
+}
+
+QScrollBar::handle:hover {
+	background: #7A7A7A;
+}
+
+QScrollBar:horizontal {
+	margin: 0 17px;
+}
+
+QScrollBar:vertical {
+	margin: 17px 0;
+}
+
+QScrollBar::add-line:vertical {
+    image: url(./1809 Dark Mode/Arrows/Down.svg);
+    height: 17px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    image: url(./1809 Dark Mode/Arrows/Up.svg);
+    height: 17px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal {
+    image: url(./1809 Dark Mode/Arrows/Right.svg);
+    width: 17px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    image: url(./1809 Dark Mode/Arrows/Left.svg);
+    width: 17px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QCheckBox::indicator:unchecked,
+QCheckBox::indicator:checked,
+QTreeView::indicator:unchecked,
+QTreeView::indicator:checked,
+QRadioButton::indicator:unchecked,
+QRadioButton::indicator:checked {
+	background: #000;
+	border: 1px solid #898989;
+}
+
+QCheckBox::indicator:hover,
+QRadioButton::indicator:hover {
+	border: 1px solid #797979;
+}
+
+QCheckBox::indicator:checked,
+QTreeView::indicator:checked,
+QRadioButton::indicator:checked {
+	image: url(./1809 Dark Mode/check.svg);
+}
+
+QGroupBox {
+	padding-top: 29px;
+}
+
+QGroupBox::title {
+	padding-top: 10px;
+}
+
+QMenuBar::item:selected {
+	background: #4D4D4D;
+}
+
+QMenu {
+	background: #2B2B2B;
+	color: #FFF;
+	padding: 2px;
+	border: 1px solid #A0A0A0;
+}
+
+QMenu::item {
+	min-height: 22px;
+	padding: 2px 20px 2px 24px;
+}
+
+QMenu::item:selected {
+	background: #414141;
+}
+
+QMenu:separator {
+	height: 1px;
+	background: #808080;
+	margin: 0 10px;
+}
+
+QMenu QPushButton {
+	background: #2B2B2B;
+	color: #FFF;
+	text-align: left;
+	padding-left: 24px;
+}
+
+QMenu QPushButton::menu-indicator {
+	subcontrol-origin: padding;
+	subcontrol-position: center right;
+	padding-right: 10px;
+}
+
+QMenu QCheckBox {
+	height: 22px;
+	background: #2B2B2B;
+	color: #FFF;
+}
+
+QMenu::right-arrow {
+	image: url(./1809 Dark Mode/Arrows/Right.svg);
+	padding-right: 10px;
+}
+
+QMenu::icon {
+	padding: 4px;
+}
+
+QProgressBar {
+	background: transparent;
+	color: #FFF;
+	text-align: center;
+	border: 1px solid #535353;
+}
+
+QProgressBar::chunk {
+	background: #06B025;
+}
+
+#downloadTab QAbstractScrollArea,
+DownloadListWidget QFrame, 
+DownloadListWidgetCompact, 
+DownloadListWidgetCompact QLabel,
+DownloadListWidgetCompact, 
+DownloadListWidgetCompact QLabel {
+	background: #2B2B2B;
+}
+
+DownloadListWidget#frame {
+	border: none;
+}
+
+#installLabel {
+	color: none;
+}
+
+DownloadListWidget[downloadView=standard]::item {
+	min-height: 44px;
+	margin: -16px 0;
+}
+
+DownloadListWidget[downloadView=compact]::item {
+	min-height: 22px;
+	margin: -4px 0;
+}
+
+QProgressBar[downloadView=standard] {
+	background: transparent;
+	margin: 11px 0;
+}
+
+QProgressBar[downloadView=compact] {
+	background: transparent;
+}
+
+QSpinBox, QDoubleSpinBox {
+	background: #191919;
+	border: 1px solid #535353;
+}
+
+QToolTip {
+	background: #202020;
+	border: 1px solid #2B2B2B;
+}
+
+#startButton {
+	background: #2B2B2B;
+	padding: 6px 0;
+}
+
+#linkButton {
+	background: #2B2B2B;
+}
+
+#startButton:hover,
+#linkButton:hover {
+	background: #4D4D4D;
+}
+
+#executablesListBox {
+	margin-right: 8px;
+}
+
+#executablesListBox::item {
+	color: #DEDEDE;
+}
+
+#displayCategoriesBtn {
+	min-width: 12px;
+}
+
+#espFilterEdit {
+	margin-top: 2px;
+	margin-bottom: 5px;
+}
+
+#tabIni #layoutWidget, #tabIni QLabel, #ModInfoDialog QToolButton, #activateESP, #deactivateESP {
+	background: #202020;
+}
