@@ -1,2 +1,5 @@
 # 1809 Dark Mode
-1809 Dark Mod theme for Mod Organizer 2
+
+![](https://i.imgur.com/tVt1tMU.png)
+
+1809 Dark Mode theme for Mod Organizer 2
