@@ -1,4 +1,4 @@
-/* v1.3 1809 Dark Mode by 6788       */
+/* v2.0 1809 Dark Mode by 6788       */
 /* https://6788-00.tumblr.com/       */
 
 /* Color Palette                     */
@@ -38,7 +38,8 @@ QMainWindow, QDialog, QMenuBar,
 #EditExecutablesDialog #widget_2, #EditExecutablesDialog #widget_4, 
 #EditExecutablesDialog QLabel, #EditExecutablesDialog QCheckBox, 
 #EditExecutablesDialog QPushButton, #ModInfoDialog QPushButton,
-#ProfilesDialog QCheckBox, #ProfilesDialog QPushButton {
+#ProfilesDialog QCheckBox, #ProfilesDialog QPushButton,
+#toolBar QWidget {
 	background: #191919;
 }
 
@@ -72,15 +73,15 @@ QToolBar {
 	margin: 8px;
 }
 
+QToolBar::handle {
+	width: 0;
+	height: 0;
+	border: 1px solid #414141;
+}
+
 QToolBar::separator {
 	width: 0;
 	border: 1px solid #2B2B2B;
-}
-
-QToolButton {
-	background: #191919;
-	padding: 4px;
-	margin: 0 4px;
 }
 
 QHeaderView {
@@ -114,6 +115,27 @@ QHeaderView::section:hover {
 	background: #434343;
 }
 
+QComboBox, QLineEdit {
+	min-height: 20px;
+	background: #191919;
+	color: #FFF;
+	padding-left: 5px;
+	border: 1px solid #535353;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+QComboBox::drop-down {
+	width: 20px;
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	border: 0;
+}
+
+QLineEdit:disabled {
+	color: #636363;
+}
+
 QTabWidget::pane {
 	background: #202020;
 	border: 1px solid #2B2B2B;
@@ -123,7 +145,8 @@ QTabWidget QHeaderView::section {
 	background: #2B2B2B;
 }
 
-QTabWidget QAbstractItemView {
+QTabWidget QAbstractItemView, #notes,
+#comments {
 	background: #2B2B2B;
 	alternate-background-color: #2B2B2B;
 	border: 1px solid #3E3E3E;
@@ -151,26 +174,6 @@ QTabBar::tab:selected {
 	color: #FFF;
 	padding: 0 10px;
 }
-QComboBox, QLineEdit {
-	min-height: 20px;
-	background: #191919;
-	color: #FFF;
-	padding-left: 5px;
-	border: 1px solid #535353;
-	margin-top: 6px;
-	margin-bottom: 6px;
-}
-
-QComboBox::drop-down {
-	width: 20px;
-	subcontrol-origin: padding;
-	subcontrol-position: top right;
-	border: 0;
-}
-
-QLineEdit:disabled {
-	color: #636363;
-}
 
 QComboBox::down-arrow,
 QToolButton:menu-indicator,
@@ -183,20 +186,6 @@ QTreeView::branch:open:has-children:!has-siblings {
 QTreeView::branch:closed:has-children:has-siblings,
 QTreeView::branch:closed:has-children:!has-siblings {
 	image: url(./1809 Dark Mode/Arrows/Right.svg);
-}
-
-QPushButton {
-	color: #FFF;
-	min-height: 22px;
-	padding: 0 10px;
-}
-
-QToolButton:hover,
-QPushButton:hover, 
-#ModInfoDialog QPushButton:hover,
-#EditExecutablesDialog QPushButton:hover,
-#ProfilesDialog QPushButton:hover {
-	background: #4D4D4D;
 }
 
 QScrollBar, 
@@ -281,6 +270,19 @@ QGroupBox {
 
 QGroupBox::title {
 	padding-top: 10px;
+}
+
+QPushButton {
+	background: transparent;
+	color: #FFF;
+	min-height: 22px;
+	padding: 0 10px;
+}
+
+QToolButton {
+	background: #191919;
+	padding: 4px;
+	margin: 0 4px;
 }
 
 QMenuBar::item:selected {
@@ -394,6 +396,41 @@ QToolTip {
 	border: 1px solid #2B2B2B;
 }
 
+QLCDNumber {
+	background: transparent;
+}
+
+QMenuBar {
+	min-height: 23px;
+	background: #000;
+}
+
+QMenuBar::item {
+	padding: 0 15px;
+}
+
+QStatusBar {
+	background: #333333;
+}
+
+QStatusBar::item {
+	border: 0;
+}
+
+QDockWidget {
+	background: transparent;
+}
+
+QTableView QTableCornerButton::section {
+	background: #202020;
+	border: 0;
+	border-right: 1px solid #535353;
+}
+
+LinkLabel {
+	qproperty-linkColor: #0078D7;
+}
+
 #startButton {
 	background: #2B2B2B;
 	padding: 6px 0;
@@ -421,10 +458,53 @@ QToolTip {
 }
 
 #espFilterEdit {
-	margin-top: 2px;
+	margin-top: 6px;
 	margin-bottom: 5px;
 }
 
+#dataTabFilter, #downloadFilterEdit {
+	margin-top: 5px;
+}
+
+#btnRefreshDownloads, #dataTabRefresh {
+	margin-bottom: 4px;
+}
+
 #tabIni #layoutWidget, #tabIni QLabel, #ModInfoDialog QToolButton, #activateESP, #deactivateESP {
+	background: #202020;
+}
+
+#toolBar {
+	qproperty-movable: true;
+}
+
+#toolBar QToolButton:hover {
+	background: #4D4D4D;
+}
+
+QTreeWidget#filters {
+	background: #202020;
+	alternate-background-color: #202020;
+}
+
+#categoriesGroup,
+#categoriesGroup #widget,
+#categoriesGroup #widget_2,
+#categoriesSplitter {
+	background: #191919;
+}
+
+QToolButton:hover,
+QPushButton:hover,
+#ModInfoDialog QPushButton:hover,
+#ModInfoDialog QToolButton:hover,
+#EditExecutablesDialog QPushButton:hover,
+#ProfilesDialog QPushButton:hover {
+	background-color: #4D4D4D;
+	color: #FFF;
+	border: 0;
+}
+
+#tabNexus QPushButton {
 	background: #202020;
 }

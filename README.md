@@ -1,7 +1,7 @@
 # 1809 Dark Mode
 
 ![](https://i.imgur.com/tVt1tMU.png)
-![](https://staticdelivery.nexusmods.com/mods/1704/images/24006/24006-1564665290-767734746.png)
+![](https://staticdelivery.nexusmods.com/mods/1704/images/24006/24006-1587914446-1164006035.png)
 
 ## Installation
 
